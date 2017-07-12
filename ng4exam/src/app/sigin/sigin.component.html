@@ -58,6 +58,37 @@
             #password="ngModel">
             <span class="help-block" *ngIf="!password.valid && password.touched">Please enter a password!</span>
         </div>
+          <div class="form-group">
+            <label for="confirmpassword">Confirm Password</label>
+            <input              
+              id="confirmpassword" 
+              class = "form-control" 
+              type="password"
+              ngModel 
+              name="confirmpassword"
+              required
+              #confirmpassword="ngModel">
+              <span class="help-block" *ngIf="!confirmpassword.valid && confirmpassword.touched">Please enter a confirm password!</span>
+          </div>
+
+
+<div class="form-group">
+            <label for="flatblock">Select Flate Block</label>
+            <select              
+              id="flatblock" 
+              class = "form-control" 
+             ngModel 
+              name="flatblock">
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+          </div>
+
+
+
           <button class="btn btn-primary" type="submit">Submit</button>
 
       </div>
